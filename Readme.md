@@ -1,2 +1,2 @@
 # TRM Exam Website:
-<a href= "https://zarrar1607.github.io/">https://zarrar1607.github.io/</a>
+<a href= "https://zarrar1607.github.io/index.html">https://zarrar1607.github.io/index.html</a>
