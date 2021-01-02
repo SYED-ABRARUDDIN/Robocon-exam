@@ -3,40 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <title>Exam Website</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
     <link rel="stylesheet" href="stylesheets/main.css">
+    
+
+    <script src="script\exam_paper.js"></script>
 </head>
 <body>
     <!--Header-->
     <header>
-        <h1>Welcome</h1><br>
-        <h3>To TRM Recuritment Test</h3>
+        <div class = "row">
+            <div class = "col-md-12">
+                <h1>Welcome</h1>
+            </div>
+        </div>
+        <br>
+        <div class = "row">
+            <div class = "col-md-12">
+                <h3>TRM Recuritment Test</h3>
+            </div>
+        </div>
+        <br>
     </header>
     <!--Personal Information-->
     <footer>
         <section>
-            <form class = "info">
-                <label>
-                    Name: <input type="text" name="Name" class="Name" placeholder="Enter Full Name">
-                </label> 
-                <label>
-                    Email: <input type="email" name="email" class="email" placeholder="Enter Valid Email Id">
-                </label>
-                <label>
-                    Phone Number: <input type="number" name="phno" class="phno" placeholder = "Enter Phone No.">
-                </label>
+            <form action = ""  class = "info" name = "info" id = "info" onsubmit="return choose_exam()">
+                <div class = "row">
+                    <div class = "col-md-4">
+                        <label>
+                            Name: <input type="text" name="Name" class="Name" placeholder="Enter Full Name" required>
+                        </label> 
+                    </div>
+                    <div class = "col-md-4">
+                        <label>
+                            Email: <input type="email" name="email" class="email" placeholder="Enter Valid Email Id" required>
+                        </label>
+                    </div>
+                    <div class = "col-md-4">
+                        <label>
+                            Phone Number: <input type="number" name="phno" class="phno" placeholder = "Enter Phone No." required>
+                        </label>
+                    </div>
+                </div> 
                 <br>
-                <label>
-                    Roll Number: <input type="number" name="rollno" class="rollno" placeholder = "Only Number">
-                </label>
-                <label>
-                    Field Perference:<select name="branch" class="branch">
-                    <option value="program">Programming</option>
-                    <option value="Elect">Electronics</option>
-                    <option value="Mech">Mechanical</option>
-                    </select>
-                </label>
+                <div class = "row">
+                    <div class = "col-md-6">
+                        <label>
+                            Current Year: 
+                            <select name="year" class="year"required> 
+                                <option value="1">1st year</option>
+                                <option value="2">2nd year</option>
+                                <option value="3">3rd year</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class = "col-md-6">
+                        <label>
+                            Field Perference:<select name="branch" class="branch"required> 
+                            <option value="cse">Programming</option>
+                            <option value="ece">Electronics</option>
+                            <option value="mech">Mechanical</option>
+                            </select>
+                        </label>
+                    </div>
+                </div>
                 <br>
-                <input type="submit" value="Click To Continue >>" class="submit">   
+                <div class = "row">
+                    <div class = "col-md-12">
+                        <input type="submit" value="Click To Continue >>" class="submit">   
+                    </div>
+                </div>
             </form>
         </section>
     </footer>
