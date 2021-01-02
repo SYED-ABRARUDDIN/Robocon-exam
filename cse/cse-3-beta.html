@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="exam.css"></script>
+    <style>
+    .form-popup1 {
+     display: none;
+     }
+     .form-popup{
+         display: block;
+     }
+    </style>
+
+</head>
+<body  onselectstart="return false">
+    <div class="container">
+    <div class="col-md-12">
+    <h3 >Seconds left:<span id="time-left">3600</span></h3>
+ 
+</div>
+</div>
+
+
+<div class="container">
+    <div class="row">
+        <div class="form-popup" id="myForm">
+        
+<form method="post" autocomplete="off" name="google-sheet">
+<div class="col-md-12">
+    
+    <label>
+        Roll Number: <input type="number" name="rollno"  placeholder = "Only Number" required="">
+    </label>
+   
+    </div>
+    </form>
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="col-md-12">
+
+
+        <button id="start-button" onClick = "this.style.visibility= 'hidden';">Start Test</button>
+ 
+</div>
+
+</div>
+
+
+
+    
+<!--
+
+Questions
+
+-->
+
+    <div class="container">
+        <div class="row">
+            <div class="form-popup1" id="myForm1">
+            
+<form method="post" autocomplete="off" name="google-sheet">
+   <div class="col-md-12">
+   <p> <pre> 1. Why is Linux called secure OS and what is Kernel?
+        </pre>
+        </p>
+    <textarea rows="5" cols="60" name="1" placeholder="Enter text" class="form-control"></textarea>
+   </div>
+
+
+
+   <div class="col-md-12">
+        <p> <pre> 2. Write about dynamic polymorphism and Virtual Function?
+  </pre>
+  </p>
+     <textarea rows="5" cols="60" name="2" placeholder="Enter text" class="form-control"></textarea>
+  </div>
+
+
+   <div class="col-md-12">
+        <p> <pre> 3. Write a function to demonstrate bit masking and bit shifting.
+  </pre>
+  </p>
+        <textarea rows="5" cols="60" name="3" placeholder="Enter text" class="form-control"></textarea>
+  </div>
+
+
+  <div class="col-md-12">
+    <p> <pre> 4. Difference between typedef and #define.
+</pre>
+</p>
+
+<textarea rows="5" cols="60" name="4" placeholder="Enter text" class="form-control"></textarea>
+</div>
+
+
+<div class="col-md-12">
+    <p> <pre> 5. Write about any Neural Network. Explain its working.
+</pre>
+</p>
+    <textarea rows="5" cols="60" name="5" placeholder="Enter text" class="form-control"></textarea>
+</div>
+
+
+<div class="col-md-12">
+    <p> <pre> 6. What is the ideal loss/variance that must be considered while training a model?Explain
+</pre>
+</p>
+    <textarea rows="5" cols="60" name="6" placeholder="Enter text" class="form-control"></textarea>
+</div>
+
+<div class="col-md-12">
+    <p> <pre> 7. Difference between:
+                -> int a = 2;
+                -> volatile int  = 2;
+                -> const int = 2;
+    </pre>
+    </p>
+     <textarea rows="5" cols="60" name="7" placeholder="Enter text" class="form-control"></textarea>
+</div>
+
+
+<div class="col-md-12">
+    <p> <pre>8. Why is it not recommended to use goto statements?
+    </pre>
+</p>
+    <textarea rows="5" cols="60" name="8" placeholder="Enter text" class="form-control"></textarea>
+</div>
+
+
+<div class="col-md-12">
+    <p> <pre> 9. Predict the output:
+                    #include <stdio.h>
+                    int main(){
+                        int a[5] = {5,1,15,20,25};
+                        int i, j ,m;
+                        i = ++a[1];
+                        j = a[1]++;
+                        m = a[i++];
+                        printf(“%d %d %d”,i,j,m);
+                        return 0;
+                    }
+</pre>
+</p>
+
+<select name="9" class="form-control">
+    <option>  a) 2,1,15 </option>
+    <option > b) 1,2,5</option>
+    <option>  c) 3,2,15</option>
+    <option>  d) 2,3,20</option>
+    <option>  e) None</option>
+</select></div>
+
+
+<div class="col-md-12">
+    <p> <pre> 10.    Predict the output:
+                        #include <stdio.h>
+                        int main(){
+                        int q =5;
+                        while(q==5--)
+                            printf(“Runtime Error”);
+                        return 0;
+                        }
+    </pre>
+</p>
+
+<select name="10" class="form-control">
+    <option>   a) Runtime Error</option>
+    <option >  b) Compilation Error</option>
+    <option>   c) Segmentation Fault</option>
+    <option>   d) Cannot use -- operator</option>
+    <option>   d) None</option>
+</select></div>
+
+
+<div class="col-md-12">
+    <p> <pre> 11. Predict the output:
+                    #include <stdio.h>
+                    void main(){
+                        int x,a=10;
+                        x=a==10?printf(“hai\t”):printf(“hello\n”);
+                        printf(“%d”,x);
+                    }
+</pre>
+</p>
+
+<select name="11" class="form-control">
+    <option>  a) hai 4</option>
+    <option>  b) Error</option>
+    <option>  c) hello 3</option>
+    <option>  d) hai hello</option>
+    <option>  e) None</option>
+</select>
+    </div>
+
+
+<div class="col-md-12">
+    <p> <pre> 12.  To check the equality of two numbers without using arithmetic or comparison operators.
+</pre>
+</p>
+    <textarea rows="5" cols="60" name="12" placeholder="Enter text" class="form-control"></textarea>
+</div>
+
+<div class="col-md-12">
+    <p> <pre>13. Write a program to find the ASCII value of the uppercase character ‘A’ and ‘1’.
+    </pre>
+</p>
+
+<textarea rows="5" cols="60" name="13" placeholder="Enter text" class="form-control"></textarea>
+</div>
+
+
+
+<div class="col-md-12">
+    <p> <pre>14) Zarrar works at ISRO where he is involved in a mission to intercept a comet that is likely to collide with each within 1 month. 
+    He is developing a C program to calculate the trajectory of the missile to be launched to intercept and destroy the approaching comet. 
+    In order to achieve the highest accuracy of the missile trajectory, what data type should he use for the variables in his equation?
+    </pre>
+</p>
+
+<input type="text" name="14" class="form-control" placeholder="answer"/>
+
+</div>
+<div class="col-md-12">
+    <p> <pre>15. Suppose Zarrar pays Rs.100 in his group when going out for lunch(no matter what the total cost). 
+    But when his girl-friend goes with the group, he pays Rs. 500. Which concept of OOPS does Zarrar demonstrate.
+    </pre>
+</p>
+
+<input type="text" name="15" class="form-control" placeholder="answer"/>
+</div>
+
+
+
+
+
+
+
+    
+     <div style="padding: 20px;" class="col-md-4">
+     <input type="submit" name="submit" class="btnSubmit btn-block" value="submit" />
+      </div>
+  </form>
+  </div>
+</div>
+  </div>
+
+          <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbxZIoPQI365OgIbn3qm_P1x9bpwAiGu2J36ZW9O4TMVzBEfxt38/exec'
+            const form = document.forms['google-sheet']
+
+            document.addEventListener('DOMContentLoaded',()=>{
+                const timeleftdisplay=document.querySelector('#time-left')
+                const startBtn=document.querySelector('#start-button')
+                let timeleft=3600
+                let a=0
+                function countDown(){
+                    document.getElementById("myForm1").style.display = "block";
+                    document.getElementById("myForm").style.display = "none";
+                    setInterval(function(){
+                        if(timeleft<=0){
+                            clearInterval(timeleft=0)
+                            if(a==0){
+                           
+                            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                .catch(error => console.error('Error!', error.message))
+                clearInterval(a=1)
+                document.getElementById("myForm1").style.display = "none";
+            }
+}
+                        timeleftdisplay.innerHTML=timeleft
+                        timeleft-=1
+                    },1000)
+                }
+                startBtn.addEventListener('click',countDown)
+            })
+          
+            document.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon... yoo"))
+                .catch(error => console.error('Error!', error.message))
+                document.getElementById("myForm1").style.display = "none";
+                    document.getElementById("myForm").style.display = "none";
+                
+            })
+          </script>
+
+ 
+</body>
+</html>

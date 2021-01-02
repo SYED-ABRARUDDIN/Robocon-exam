@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="exam.css"></script>
+    <style>
+    .form-popup1 {
+     display: none;
+     }
+     .form-popup{
+         display: block;
+     }
+    </style>
+
+</head>
+<body  onselectstart="return false">
+    <div class="container">
+    <div class="col-md-12">
+    <h3 >Seconds left:<span id="time-left">3600</span></h3>
+ 
+</div>
+</div>
+
+
+<div class="container">
+    <div class="row">
+        <div class="form-popup" id="myForm">
+        
+<form method="post" autocomplete="off" name="google-sheet">
+<div class="col-md-12">
+    
+    <label>
+        Roll Number: <input type="number" name="rollno"  placeholder = "Only Number" required="">
+    </label>
+   
+    </div>
+    </form>
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="col-md-12">
+
+
+        <button id="start-button" onClick = "this.style.visibility= 'hidden';">Start Test</button>
+ 
+</div>
+
+</div>
+
+
+
+    
+
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="form-popup1" id="myForm1">
+            
+<form method="post" autocomplete="off" name="google-sheet">
+   <div class="col-md-12">
+   <p> <pre> 1.   What is a deadlock and how can it be avoided?
+        </pre>
+        </p>
+    <textarea rows="5" cols="60" name="1" placeholder="Enter text" class="form-control"></textarea>
+   </div>
+
+
+
+   <div class="col-md-12">
+        <p> <pre> 2. Write about operator overloading and what is this OOPS concept called?
+  </pre>
+  </p>
+     <textarea rows="5" cols="60" name="2" placeholder="Enter text" class="form-control"></textarea>
+  </div>
+
+
+   <div class="col-md-12">
+        <p> <pre> 3. What are interrupts. What is the difference between hardware and software interrupts?
+  </pre>
+  </p>
+        <textarea rows="5" cols="60" name="3" placeholder="Enter text" class="form-control"></textarea>
+  </div>
+
+
+  <div class="col-md-12">
+    <p> <pre> 4. Use 4 methods(4 different keywords) of creating infinite loops.
+</pre>
+</p>
+
+<textarea rows="5" cols="60" name="4" placeholder="Enter text" class="form-control"></textarea>
+</div>
+
+
+<div class="col-md-12">
+    <p> <pre> 5. What is meant by ‘Training set’ and ‘Test Set’?
+</pre>
+</p>
+    <textarea rows="5" cols="60" name="5" placeholder="Enter text" class="form-control"></textarea>
+</div>
+
+
+<div class="col-md-12">
+    <p> <pre> 6. A feature F1 can take a certain value: A, B, C, D, E, & F and represents the grade of students from a college. 
+    Which of the following statements is true in the following case?
+</pre>
+</p>
+
+<select name="6" class="form-control">
+    <option>A) Feature F1 is an example of nominal variable.</option>
+    <option >B) Feature F1 is an example of ordinal variable.</option>
+    <option>C) It doesn’t belong to any of the above category.</option>
+    <option>D) Both of these</option>
+    <option>E) None</option>
+</select>
+</div>
+
+<div class="col-md-12">
+    <p> <pre> 
+        7. What will happen if you put System.exit() in catch block? Will finally block be executed?
+    </pre>
+    </p>
+     <textarea rows="5" cols="60" name="7" placeholder="Enter text" class="form-control"></textarea>
+</div>
+
+
+<div class="col-md-12">
+    <p> <pre>8. Write difference between thread and process.
+    </pre>
+</p>
+
+    <textarea rows="5" cols="60" name="8" placeholder="Enter text" class="form-control"></textarea>
+</div>
+
+
+<div class="col-md-12">
+    <p> <pre> 9. Predict the output
+                    void main()
+                    {
+                                float you= 1.1;
+                                double trm = 1.1;
+                                if(you==trm)
+                    printf(“welcome you are selected”);
+                    else
+                                            printf(“you are not selected”);
+                    }
+
+
+
+
+
+</pre>
+</p>
+
+<select name="9" class="form-control">
+    <option>  a) welcome you are selected </option>
+    <option > b) you are not selected</option>
+    <option>  c) Compilation Error </option>
+    <option>  d) Runtime Error</option>
+    <option>  e) None</option>
+</select></div>
+
+
+<div class="col-md-12">
+    <p> <pre> 10.    Predict the output:
+                        #include<stdio.h>
+                        int main()
+                        {
+                            int i = 1, j = 1;
+                            for(--i && j++ ; i<10; i+=2)
+                            {
+                                printf("loop ");
+                            }
+                            return 0;
+                        }
+
+
+</pre>
+</p>
+
+<select name="10" class="form-control">
+    <option>   a) Compilation error</option>
+    <option >  b) Program never ends</option>
+    <option>   c) loop loop loop loop loop</option>
+    <option>   d)None of the above</option>
+</select></div>
+
+
+<div class="col-md-12">
+    <p> <pre> 11. Predict the output:
+                    #include <stdio.h>
+                    void main(){
+                        int x = 97;
+                        int y = sizeof(x++);
+                        printf(“X is %d”, x);
+                    }
+
+
+
+
+
+</pre>
+</p>
+
+<select name="11" class="form-control">
+    <option>  a) X is 97</option>
+    <option >  b) X is 98</option>
+    <option>    c) X is 99  </option>
+    <option>      d) Run time error</option>
+    <option>      e) None</option>
+</select>
+    </div>
+
+
+<div class="col-md-12">
+    <p> <pre> 12.  Write a program to check if the input is prime or not with least time complexity or number of comparisons.(Hint: The Time Complexity can be O(N))
+
+</pre>
+</p>
+    <textarea rows="5" cols="60" name="12" placeholder="Enter text" class="form-control"></textarea>
+</div>
+
+<div class="col-md-12">
+    <p> <pre>13. Largest of two distinct numbers without using any conditional statements and conditional operators.
+    </pre>
+</p>
+
+<textarea rows="5" cols="60" name="13" placeholder="Enter text" class="form-control"></textarea>
+</div>
+
+
+
+<div class="col-md-12">
+    <p> <pre>14) Zara wants to share her code with her Team “TRM”. Thus she wants to include the date of the program creation, the author and other information with the program. 
+    What component should she use?
+                       A. Header Files
+                       B. Iterations
+                       C. Comments
+                       D. Preprocessor directives
+    </pre>
+</p>
+
+<input type="text" name="14" class="form-control" placeholder="answer"/>
+
+</div>
+<div class="col-md-12">
+    <p> <pre>15. Zarrar works at ISRO where he is involved in a mission to intercept a comet that is likely to collide with each within 1 month. 
+    He is developing a C program to calculate the trajectory of the missile to be launched to intercept and destroy the approaching comet. 
+    In order to achieve the highest accuracy of the missile trajectory, what data type should he use for the variables in his equation?
+    </pre>
+</p>
+
+<input type="text" name="15" class="form-control" placeholder="answer"/>
+</div>
+
+
+
+
+
+
+
+    
+     <div style="padding: 20px;" class="col-md-4">
+     <input type="submit" name="submit" class="btnSubmit btn-block" value="submit" />
+      </div>
+  </form>
+  </div>
+</div>
+  </div>
+
+          <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbxZIoPQI365OgIbn3qm_P1x9bpwAiGu2J36ZW9O4TMVzBEfxt38/exec'
+            const form = document.forms['google-sheet']
+
+            document.addEventListener('DOMContentLoaded',()=>{
+                const timeleftdisplay=document.querySelector('#time-left')
+                const startBtn=document.querySelector('#start-button')
+                let timeleft=3600
+                let a=0
+                function countDown(){
+                    document.getElementById("myForm1").style.display = "block";
+                    document.getElementById("myForm").style.display = "none";
+                    setInterval(function(){
+                        if(timeleft<=0){
+                            clearInterval(timeleft=0)
+                            if(a==0){
+                           
+                            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                .catch(error => console.error('Error!', error.message))
+                clearInterval(a=1)
+                document.getElementById("myForm1").style.display = "none";
+            }
+}
+                        timeleftdisplay.innerHTML=timeleft
+                        timeleft-=1
+                    },1000)
+                }
+                startBtn.addEventListener('click',countDown)
+            })
+          
+            document.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon... yoo"))
+                .catch(error => console.error('Error!', error.message))
+                document.getElementById("myForm1").style.display = "none";
+                    document.getElementById("myForm").style.display = "none";
+                
+            })
+          </script>
+
+ 
+</body>
+</html>
